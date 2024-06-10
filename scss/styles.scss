@@ -1,0 +1,25 @@
+/* PARTIALS */
+
+@import './partials/base.scss';
+@import './partials/layout.scss';
+@import './partials/reset.scss';
+@import './partials/variables.scss';
+
+
+/* PAGES */
+
+@import './pages/about_us.scss';
+@import './pages/contact.scss';
+@import './pages/home.scss';
+@import './pages/in_nature.scss';
+@import './pages/our_expo.scss';
+
+
+/* MEDIA QUERIES */
+
+@import './media_queries/screen_480.scss';
+@import './media_queries/screen_481-600.scss';
+@import './media_queries/screen_601-768.scss';
+@import './media_queries/screen_769-1023.scss';
+@import './media_queries/screen_1024-1200.scss';
+

@@ -1,0 +1,81 @@
+/* DESKTOP CHICA */
+
+@media only screen and (min-width: 769px) and (max-width:1023px) {
+
+    /* HOME */
+    .carousel_container {
+        margin: $percent5;
+        .carousel-item {
+            height: 300px;
+        }
+    }
+
+    .home_painting_writing {
+        max-width: 400px;
+        margin: 2%;
+        border-radius: $radius;
+        box-shadow: $box-shadow;
+    }
+
+    .location_container {
+        display: flex;
+        justify-content: space-between;
+        .location_text {
+            display: inline-block;
+            align-self: center;
+            width: 40%;
+            .location_text_p {
+                font-size: 1rem;
+            }
+        }
+        .location_map {
+            width: 80%;
+            margin-right: 3%;
+        }
+    }
+    
+
+    /* ABOUT US */
+
+    .about_us_container_history p {
+        padding: 2%;
+        margin: 0px;
+    }
+    
+    .about_us_picture {
+        width: 400px;
+        margin: 2%;
+        position: sticky;
+        top: 80px;
+    }
+    
+
+
+    /* CONTACT */
+    
+    .contact_schedule_picture {
+        width: 350px !important;
+        height: 250px !important;
+        display: block;
+        margin: auto;    
+    }
+    
+    /* EXPO */
+    
+    .collapse {
+        border-radius: $radius;
+        margin: $percent5;
+    }
+
+    .our_expo_picture {
+        display: block;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+
+    .expo_sm {
+        display: none;
+    }
+
+}
+

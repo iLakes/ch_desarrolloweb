@@ -1,0 +1,47 @@
+/* PARTIALS */
+
+@import '../partials/variables.scss';
+
+
+.collapsables {
+    margin: 2% 5% 2% 5% !important;
+    border-radius: $radius !important;
+}
+
+.our_expo_container {
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin: 2% !important;
+    .collapse {
+        border: none;
+        background-color: $light-gray;
+
+    }
+}
+
+.our_expo_picture {
+    width: 400px;
+    max-height: 300px;
+    border-radius: $radius;
+    margin: 5px;
+    transition: 1s;
+
+    &:hover {
+        transform: scale(1.05); 
+    }
+}
+
+.expo_sm {
+    display: none;
+}
+
+.btn-primary {
+    background-color: white;
+    display: flex;
+    align-self: flex-end;
+    margin: 2%;
+    font-family: $main-font;
+    font-size: 2rem;
+    color: $light-blue;
+    font-weight: normal;
+}

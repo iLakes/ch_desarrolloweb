@@ -1,0 +1,53 @@
+/* PARTIALS */
+
+@import '../partials/variables.scss';
+
+
+.carousel_container {
+    margin: $percent10;
+    .carousel-item {
+        height: 400px;
+    }
+}
+
+.home_container_pictures {
+//    @extend .basic_container;
+ //   flex-wrap: wrap;
+    .home_painting_writing {
+        width: 500px;
+        margin: 2%;
+        border-radius: $radius;
+        box-shadow: $box-shadow;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.05); 
+        }
+    }
+}
+
+.location_container {
+    @extend .basic_container;
+    .location_map {
+        @include picture_size (1200,400);
+    }
+}
+
+
+.quote {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $main-font;
+    margin: 10% 0% 0% 0%;
+    animation-duration: 4s;
+}
+
+.quote_authors {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5%;
+    animation-duration:4s;
+}
+
+

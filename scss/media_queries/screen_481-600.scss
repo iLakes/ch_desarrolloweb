@@ -1,0 +1,142 @@
+/* TABLET CHICA */
+
+@media only screen and (min-width:481px) and (max-width:600px) {
+
+    /* LAYOUT */
+
+    .header_logo {
+        width: 50px;
+    }
+
+    footer {
+        div {
+            ul {
+                display: block;
+            }
+            p {
+                font-size: 0.7rem;  
+            }
+        }
+    }
+
+    /* FUENTES */
+    h1  {
+        font-size: 2rem;
+    }
+    
+    h2  {
+        font-size: 1.5rem;
+        margin-top: 10%;
+    }
+    
+    h3  {
+        font-size: 1.2rem;
+        margin-top: 10%;
+    }
+
+    p   {
+        font-size: 0.8rem;
+        margin: $percent5;
+    }
+
+    /* HOME */
+
+    .carousel-control-next {
+        height: 100px !important;
+    }
+
+    .carousel_container .carousel-item {
+        height: 200px !important;
+    }
+    
+    .location_container {
+        display: block;
+        justify-content: space-around;
+    }
+    
+    .location_map {
+        display: block;
+        margin: 5%;
+    }
+
+    section div iframe {
+        width: 560px;
+        height: 500px;
+    }
+    
+    .location_text {
+        display: inline-block;
+        align-self: center;
+        margin: 2%;
+    }
+    
+    .location_text_p {
+        font-size: 1rem;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+    }
+    
+    .quote_authors {
+        font-size: 0.8rem;
+    }
+    
+
+    /* ABOUT US */
+
+    .about_us_container {
+        display: block;
+    }
+
+    .about_us_container_history p {
+        padding: 2%;
+        margin: 0px;
+    }
+    
+    .about_us_picture {
+        max-width: 560px;
+        margin: 5%;
+        position: sticky;
+        top: 80px;
+    }
+    
+
+    /* CONTACT */
+
+    .contact_schedule_container {
+        display: block;
+    }
+    
+    .contact_schedule_picture {
+        max-width: 450px;
+        display: block;
+        margin: auto;    
+    }
+    
+    .contact_form {
+        margin:  $percent5;
+        display: block;
+    }
+
+    .item_button {
+        margin-bottom: 10%;
+    }
+
+    /* EXPO */
+    
+    .expo_sm {
+        display: none;
+    }
+
+    /* EN LA NATURALEZA */
+
+    .in_nature_tour_container {
+        display: block;
+    }
+
+}
+
+
+
+

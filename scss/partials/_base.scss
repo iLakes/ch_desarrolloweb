@@ -1,0 +1,54 @@
+/* PARTIALS */
+
+@import './variables.scss';
+
+
+/* CLASES */
+
+.titles {
+    font-family: $main-font;
+    color:$light-blue;
+    margin: 2%;
+}
+
+.links {
+    font-family: $link-font;
+    color: $header-footer-color;
+    text-decoration: $link-decoration;
+    font-size: 1rem;
+}
+
+.lists {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* ETIQUETAS */
+h1  {
+    @extend .titles;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+
+}
+
+h2  {
+    @extend .titles;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+h3  {
+    @extend .titles;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+p   {
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    color: $dark-gray;
+    margin: $percent10;
+}
+

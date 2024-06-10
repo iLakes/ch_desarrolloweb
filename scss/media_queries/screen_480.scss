@@ -1,0 +1,149 @@
+// mobile
+
+@media only screen and (max-width:480px) {
+
+    /* LAYOUT */
+    .header_logo {
+        width: 50px;
+    }
+    footer {
+        div {
+            ul {
+                display: block;
+            }
+        }
+    }
+    
+    footer div p {
+        font-size: 0.7rem;  
+    }
+
+    /* FUENTES */
+    h1  {
+        font-size: 2rem;
+    }
+    
+    h2 h3 {
+        margin-top: 10%;
+    }
+
+    h2  {
+        font-size: 1.5rem;
+    }
+    
+    h3  {
+        font-size: 1.2rem;
+    }
+
+    p   {
+        font-size: 0.8rem;
+        margin:  $percent5;
+    }
+
+    /* HOME */
+
+    .carousel_container {
+        margin: $percent5;
+    }
+
+    .carousel-item {
+        height: 200px;
+    }
+    
+    .location_container {
+        display: block;
+        justify-content: space-around;
+    }
+    
+    .location_map {
+        margin: 2%;
+    }
+
+    section div iframe {
+        width: 450px;
+        height: 500px;
+    }
+    
+    .location_text {
+        display: inline-block;
+        align-self: center;
+        margin: 2%;
+    }
+    
+    .location_text_p {
+        font-size: 1rem;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+    }
+    
+    .quote_authors {
+        font-size: 0.8rem;
+    }
+
+    /* ABOUT US */
+
+    .about_us_container {
+        display: block;
+    }
+
+    .about_us_container_history p {
+        padding: 2%;
+        margin: 0px;
+    }
+    
+    .about_us_picture {
+        max-width: 450px;
+        position: sticky;
+        top: 80px;
+    }
+    
+    /* CONTACT */
+
+    .contact_schedule_container {
+        display: block;
+    }
+    
+    .contact_schedule_picture {
+        max-width: 450px;
+        display: block;
+        margin: auto;    
+    }
+    
+    .contact_form {
+        margin: $percent5;
+        display: block;
+    }
+
+    .item_button {
+        margin-bottom: 10%;
+    }
+
+    /* EXPO */
+    
+    .collapsables {
+        display: none;
+    }
+    
+    .expo_sm {
+        display: block;
+        margin: 5%;
+    }
+
+    .expo_pic {
+        max-width: 450px;
+        box-shadow: $box-shadow;
+        margin: 2%;
+        border-radius: 10px;
+    }
+
+
+    /* IN NATURE */
+
+    .in_nature_tour_container {
+        display: block;
+    }
+}
+
+

@@ -1,0 +1,63 @@
+/* PARTIALS */
+
+@import '../partials/variables.scss';
+
+
+
+.contact_schedule_container {
+    @extend .basic_container;    
+    .contact_p_age  {
+        font-style: italic;
+    }
+    .contact_schedule_picture {
+        @include picture_size(700px, 400px);
+        box-shadow: $box-shadow;
+        border-radius: $radius;
+    }
+}
+
+.contact_form {
+    margin: $percent5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas: 
+    "name surname"
+    "phone email"
+    "button button";
+
+    .item_button .item_email .item_name .item_phone .item_surname {
+        padding: 2%;
+    }
+
+    .item_name {
+        grid-area: name;
+    }
+    .item_surname {
+        grid-area: surname;
+    }
+    .item_phone {
+        grid-area: phone;
+    }
+    .item_email {
+        grid-area: email;
+    }
+    .item_button {
+        grid-area: button;
+        margin: 2%;
+    }
+    
+   .btn {
+        background-color: $dark-blue;
+        width: 100px;
+        color: white;
+        align-self: flex-end;
+        box-shadow: $box-shadow;
+            &:hover {
+                background-color: $dark-blue-hover;
+                box-shadow: $no-shadow;
+             }
+    }
+    
+}

@@ -1,0 +1,13 @@
+/* DESKTOP GRANDE */
+
+@media only screen and (min-width: 1024px) and (max-width:1200px) {
+
+    .contact_schedule_picture {
+        @include picture_size(500px, 350px);
+    }
+
+    .location_map {
+        width: 90%;
+    }
+
+}

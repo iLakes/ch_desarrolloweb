@@ -1,0 +1,66 @@
+/* COLORES */
+
+$dark-blue: #03295e;
+$dark-blue-hover:#0244a2;
+$light-blue:#2064C1;
+$very-light-blue: #3b80e1;
+$dark-gray: #232932;
+$light-gray: #E4E3E3;
+$very-light-gray: #d2e2f8;
+
+
+/* FUENTES */
+
+$main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$secondary-font: Verdana, Geneva, Tahoma, sans-serif;
+
+$link-font: Verdana, Geneva, Tahoma, sans-serif;
+$header-footer-color: white;
+$link-decoration: none;
+
+p {
+    font-size: 1.2rem;
+    font-family: $secondary-font;
+}
+
+/* SOMBRAS */
+
+$header-shadow: 0px 5px 5px hsla(215, 94%, 19%, 0.514);
+$box-shadow: 5px 5px 5px #909090;
+$no-shadow: 0px 0px 0px;
+
+
+/* MEDIDAS */
+
+$padding-box: 20px;
+$percent10: 0% 10% 0% 10%;
+$percent5: 0% 5% 0% 5%;
+
+$radius: 10px;
+
+
+/* COMPONENTES */
+
+@mixin picture_size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.basic_container {
+    display: flex;
+    justify-content: space-around;
+    padding: $percent5;
+}
+
+/* ANIMACIONES */
+ @keyframes live_blues{
+    0% {
+        background-color: $dark-blue;
+    }
+    50% {
+        background-color: $light-blue;
+    }
+    100% {
+        background-color: $dark-blue;
+    }
+ }

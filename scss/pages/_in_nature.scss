@@ -1,0 +1,65 @@
+/* PARTIALS */
+
+@import '../partials/variables.scss';
+
+
+.in_nature_container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    .in_nature_main_picture {
+        width: 100%;
+        border-radius: $radius;
+        box-shadow: $box-shadow;
+    }
+    .in_nature_cta  {
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        background-color:$dark-blue;
+        color: white;
+        border-radius: $radius;
+        display: float;
+        width: fit-content;
+        font-family: $secondary-font;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 1%;
+        z-index: 1;
+
+        animation-name: live_blues;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+    }
+}
+
+.in_nature_tour_container {
+    @extend .basic_container;
+
+    .in_nature_sm_container {
+        justify-content: center;
+
+        .in_nature_text {
+            margin: 2%;
+            font-size: 0.9rem;
+        }
+        .in_nature_picture_sm {
+            @include picture_size (200px, 200px);
+            justify-self: center;
+            border-radius: 50%;
+            margin: 5%;
+
+            transition: 1s;
+            &:hover {
+                filter: brightness(70%) grayscale(1.0);
+            }
+        }
+        .in_nature_text {
+            width: 80%;
+        }
+}
+}
