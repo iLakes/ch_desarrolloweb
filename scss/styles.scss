@@ -1,25 +1,25 @@
 /* PARTIALS */
 
-@import './partials/base.scss';
-@import './partials/layout.scss';
-@import './partials/reset.scss';
-@import './partials/variables.scss';
+@import './partials/reset';
+@import './partials/variables';
+@import './partials/base';
+@import './partials/layout';
 
 
 /* PAGES */
 
-@import './pages/about_us.scss';
-@import './pages/contact.scss';
-@import './pages/home.scss';
-@import './pages/in_nature.scss';
-@import './pages/our_expo.scss';
+@import './pages/about_us';
+@import './pages/contact';
+@import './pages/home';
+@import './pages/in_nature';
+@import './pages/our_expo';
 
 
 /* MEDIA QUERIES */
 
-@import './media_queries/screen_480.scss';
-@import './media_queries/screen_481-600.scss';
-@import './media_queries/screen_601-768.scss';
-@import './media_queries/screen_769-1023.scss';
-@import './media_queries/screen_1024-1200.scss';
+@import './media_queries/screen_480';
+@import './media_queries/screen_481-600';
+@import './media_queries/screen_601-768';
+@import './media_queries/screen_769-1023';
+@import './media_queries/screen_1024-1200';
 

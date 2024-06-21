@@ -1,4 +1,5 @@
-@import '../partials/variables.scss';
+@import './variables';
+@import './base';
 
 .main_background {
     width: 100%;
@@ -7,21 +8,20 @@
 
 header {
     z-index: 1;
-    background-color: $dark-blue;
+    background-color: red;
     box-shadow: $header-shadow;
     display: flex;
     justify-content: space-between;
     padding: $padding-box;
 
     nav {
-        display: flex;
-        align-items: center;
+        @extend .layout_container_lists;
         ul {
-            @extend .lists;
+            @extend .layout_lists;
             li {
                 margin: 10px;
                 a {
-                    @extend .links;
+                    @extend .layout_links;
                     transition: 0.5s;
                     &:hover {
                         color: $light-blue;
@@ -33,7 +33,6 @@ header {
     }
 }
 
-
 .header_logo {
     max-width: 100px;
     margin-left: -10px;
@@ -44,37 +43,29 @@ header {
 }
 
 
-
-.open_menu, .close_menu {
-    display: none;
-}
-
-
 footer {
+    @extend .basic-container;
     background-color: $dark-blue;
-    display: flex;
-    justify-content: space-around;
-    padding: 2%;
 
     div {
-        display: flex;
-        align-items: center;
+        @extend .layout_container_lists;
         ul {
-            @extend .lists;
+            @extend .layout_lists;
             li {
                 margin: 5px;
                 vertical-align: middle;
                 a {
-                    @extend .links;
+                    @extend .layout_links;
                 }
             }
         }
-        p {
-            font-family: $main-font;
-            color: $header-footer-color;
-            font-size: 0.8rem;
-        }
     }
+}
+
+.copyright {
+    font-family: $main-font;
+    color: $header-footer-color;
+    font-size: 0.8rem;
 }
 
 

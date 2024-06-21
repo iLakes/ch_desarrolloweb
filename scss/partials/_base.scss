@@ -1,36 +1,15 @@
 /* PARTIALS */
 
-@import './variables.scss';
+@import './variables';
 
-
-/* CLASES */
-
-.titles {
-    font-family: $main-font;
-    color:$light-blue;
-    margin: 2%;
-}
-
-.links {
-    font-family: $link-font;
-    color: $header-footer-color;
-    text-decoration: $link-decoration;
-    font-size: 1rem;
-}
-
-.lists {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-}
 
 /* ETIQUETAS */
+
 h1  {
     @extend .titles;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 5%;
-
 }
 
 h2  {
@@ -52,3 +31,56 @@ p   {
     margin: $percent10;
 }
 
+/* CLASES */
+
+.titles {
+    font-family: $main-font;
+    color:$light-blue;
+    margin: 2%;
+}
+
+.layout_container_lists {
+    display: flex;
+    align-items: center;
+}
+
+.layout_links {
+    font-family: $link-font;
+    color: $header-footer-color;
+    text-decoration: $link-decoration;
+    font-size: 1rem;
+}
+
+.layout_lists {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+/* COMPONENTES */
+
+@mixin picture_size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.basic_container {
+    display: flex;
+    justify-content: space-around;
+    padding: $percent5;
+}
+
+/* ANIMACIONES */
+ @keyframes live_blues{
+    0% {
+        background-color: $dark-blue;
+    }
+    50% {
+        background-color: $light-blue;
+    }
+    100% {
+        background-color: $dark-blue;
+    }
+ }
