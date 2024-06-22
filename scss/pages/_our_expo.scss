@@ -15,16 +15,17 @@
     .collapse {
         border: none;
         background-color: $light-gray;
-
     }
 }
 
+
 .our_expo_picture {
     width: 400px;
-    max-height: 300px;
+    height: 300px;
     border-radius: $radius;
     margin: 5px;
     transition: 1s;
+    object-fit: cover;
 
     &:hover {
         transform: scale(1.05); 
@@ -44,4 +45,9 @@
     font-size: 2rem;
     color: $light-blue;
     font-weight: normal;
+}
+
+
+.poems {
+    white-space: pre;
 }

@@ -2,12 +2,30 @@
 
 @media only screen and (min-width: 1024px) and (max-width:1200px) {
 
-    .contact_schedule_picture {
-        @include picture_size(500px, 350px);
+    // HOME
+
+    .home_flipping_container_2 {
+        margin: auto;
     }
 
     .location_map {
         width: 90%;
     }
+    
+    .small_map {
+        display: none;
+    }
+
+    .location_text {
+        margin: 2%;
+    }
+
+
+    // CONTACT 
+    .contact_schedule_picture {
+        @include picture_size(500px, 350px);
+    }
+
+
 
 }

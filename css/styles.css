@@ -1,53 +1,23 @@
 /* PARTIALS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
 /* PARTIALS */
 /* COLORES */
 /* FUENTES */
-p {
-  font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /* SOMBRAS */
 /* MEDIDAS */
-/* COMPONENTES */
-.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container {
-  display: flex;
-  justify-content: space-around;
-  padding: 0% 5% 0% 5%;
-}
-
-/* ANIMACIONES */
-@keyframes live_blues {
-  0% {
-    background-color: #03295e;
-  }
-  50% {
-    background-color: #2064C1;
-  }
-  100% {
-    background-color: #03295e;
-  }
-}
-/* CLASES */
-.titles, h3, h2, h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #2064C1;
-  margin: 2%;
-}
-
-.links, footer div ul li a, header nav ul li a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.lists, footer div ul, header nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-}
-
 /* ETIQUETAS */
 h1 {
   font-size: 3rem;
@@ -72,20 +42,115 @@ p {
   margin: 0% 10% 0% 10%;
 }
 
-/* COLORES */
-/* FUENTES */
-p {
-  font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
 }
 
-/* SOMBRAS */
-/* MEDIDAS */
+/* CLASES */
+.titles, h1, h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2064C1;
+  margin: 2%;
+}
+
+.layout_container_lists, footer div, header nav {
+  display: flex;
+  align-items: center;
+}
+
+.layout_links, footer div ul li a, header nav ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container {
+.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
+  flex-direction: row;
+}
+
+/* ANIMACIONES */
+@keyframes live_blues {
+  0% {
+    background-color: #03295e;
+  }
+  50% {
+    background-color: #2064C1;
+  }
+  100% {
+    background-color: #03295e;
+  }
+}
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* PARTIALS */
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* ETIQUETAS */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #232932;
+  margin: 0% 10% 0% 10%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* CLASES */
+.titles, h1, h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2064C1;
+  margin: 2%;
+}
+
+.layout_container_lists, footer div, header nav {
+  display: flex;
+  align-items: center;
+}
+
+.layout_links, footer div ul li a, header nav ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* COMPONENTES */
+.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container, footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0% 5% 0% 5%;
+  flex-direction: row;
 }
 
 /* ANIMACIONES */
@@ -103,6 +168,7 @@ p {
 .main_background {
   width: 100%;
   background-image: linear-gradient(180deg, white, #d2e2f8, white);
+  height: 100%;
 }
 
 header {
@@ -113,10 +179,6 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-header nav {
-  display: flex;
-  align-items: center;
-}
 header nav ul li {
   margin: 10px;
 }
@@ -124,8 +186,8 @@ header nav ul li a {
   transition: 0.5s;
 }
 header nav ul li a:hover {
-  color: #2064C1;
-  font-size: 1.2rem;
+  color: #3b80e1;
+  text-decoration: underline;
 }
 
 .header_logo {
@@ -137,80 +199,89 @@ header nav ul li a:hover {
   display: none;
 }
 
-.open_menu, .close_menu {
-  display: none;
-}
-
 footer {
   background-color: #03295e;
-  display: flex;
-  justify-content: space-around;
-  padding: 2%;
-}
-footer div {
-  display: flex;
-  align-items: center;
 }
 footer div ul li {
   margin: 5px;
   vertical-align: middle;
 }
-footer div p {
+footer div ul li a {
+  text-align: center;
+}
+footer p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   font-size: 0.8rem;
+  margin: 2% 2% 3% 2%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* COLORES */
-/* FUENTES */
-p {
-  font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* SOMBRAS */
-/* MEDIDAS */
-/* COMPONENTES */
-.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container {
-  display: flex;
-  justify-content: space-around;
-  padding: 0% 5% 0% 5%;
-}
-
-/* ANIMACIONES */
-@keyframes live_blues {
-  0% {
-    background-color: #03295e;
-  }
-  50% {
-    background-color: #2064C1;
-  }
-  100% {
-    background-color: #03295e;
-  }
-}
 /* PAGES */
 /* PARTIALS */
 /* COLORES */
 /* FUENTES */
-p {
-  font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /* SOMBRAS */
 /* MEDIDAS */
+/* PARTIALS */
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* ETIQUETAS */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #232932;
+  margin: 0% 10% 0% 10%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* CLASES */
+.titles, h1, h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2064C1;
+  margin: 2%;
+}
+
+.layout_container_lists, header nav, footer div {
+  display: flex;
+  align-items: center;
+}
+
+.layout_links, header nav ul li a, footer div ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container {
+.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
+  flex-direction: row;
 }
 
 /* ANIMACIONES */
@@ -225,6 +296,135 @@ p {
     background-color: #03295e;
   }
 }
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* PARTIALS */
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* ETIQUETAS */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #232932;
+  margin: 0% 10% 0% 10%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* CLASES */
+.titles, h1, h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2064C1;
+  margin: 2%;
+}
+
+.layout_container_lists, header nav, footer div {
+  display: flex;
+  align-items: center;
+}
+
+.layout_links, header nav ul li a, footer div ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* COMPONENTES */
+.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container, footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0% 5% 0% 5%;
+  flex-direction: row;
+}
+
+/* ANIMACIONES */
+@keyframes live_blues {
+  0% {
+    background-color: #03295e;
+  }
+  50% {
+    background-color: #2064C1;
+  }
+  100% {
+    background-color: #03295e;
+  }
+}
+.main_background {
+  width: 100%;
+  background-image: linear-gradient(180deg, white, #d2e2f8, white);
+  height: 100%;
+}
+
+header {
+  z-index: 1;
+  background-color: #03295e;
+  box-shadow: 0px 5px 5px hsla(215, 94%, 19%, 0.514);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header nav ul li {
+  margin: 10px;
+}
+header nav ul li a {
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  color: #3b80e1;
+  text-decoration: underline;
+}
+
+.header_logo {
+  max-width: 100px;
+  margin-left: -10px;
+}
+
+.header_menu {
+  display: none;
+}
+
+footer {
+  background-color: #03295e;
+}
+footer div ul li {
+  margin: 5px;
+  vertical-align: middle;
+}
+footer div ul li a {
+  text-align: center;
+}
+footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  margin: 2% 2% 3% 2%;
+}
+
 .about_us_container .about_us_container_history p {
   display: inline-block;
   margin-left: 2%;
@@ -261,18 +461,197 @@ p {
 /* PARTIALS */
 /* COLORES */
 /* FUENTES */
-p {
-  font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /* SOMBRAS */
 /* MEDIDAS */
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* PARTIALS */
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* ETIQUETAS */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #232932;
+  margin: 0% 10% 0% 10%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* CLASES */
+.titles, h1, h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2064C1;
+  margin: 2%;
+}
+
+.layout_container_lists, header nav, footer div {
+  display: flex;
+  align-items: center;
+}
+
+.layout_links, header nav ul li a, footer div ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, .about_us_container {
+.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, footer, .about_us_container {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
+  flex-direction: row;
+}
+
+/* ANIMACIONES */
+@keyframes live_blues {
+  0% {
+    background-color: #03295e;
+  }
+  50% {
+    background-color: #2064C1;
+  }
+  100% {
+    background-color: #03295e;
+  }
+}
+.main_background {
+  width: 100%;
+  background-image: linear-gradient(180deg, white, #d2e2f8, white);
+  height: 100%;
+}
+
+header {
+  z-index: 1;
+  background-color: #03295e;
+  box-shadow: 0px 5px 5px hsla(215, 94%, 19%, 0.514);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header nav ul li {
+  margin: 10px;
+}
+header nav ul li a {
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  color: #3b80e1;
+  text-decoration: underline;
+}
+
+.header_logo {
+  max-width: 100px;
+  margin-left: -10px;
+}
+
+.header_menu {
+  display: none;
+}
+
+footer {
+  background-color: #03295e;
+}
+footer div ul li {
+  margin: 5px;
+  vertical-align: middle;
+}
+footer div ul li a {
+  text-align: center;
+}
+footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  margin: 2% 2% 3% 2%;
+}
+
+/* PARTIALS */
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* ETIQUETAS */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #232932;
+  margin: 0% 10% 0% 10%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* CLASES */
+.titles, h1, h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2064C1;
+  margin: 2%;
+}
+
+.layout_container_lists, header nav, footer div {
+  display: flex;
+  align-items: center;
+}
+
+.layout_links, header nav ul li a, footer div ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* COMPONENTES */
+.basic_container, .in_nature_tour_container, .location_container, .contact_schedule_container, footer, .about_us_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0% 5% 0% 5%;
+  flex-direction: row;
 }
 
 /* ANIMACIONES */
@@ -338,18 +717,68 @@ p {
 /* PARTIALS */
 /* COLORES */
 /* FUENTES */
-p {
-  font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /* SOMBRAS */
 /* MEDIDAS */
+/* PARTIALS */
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* ETIQUETAS */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #232932;
+  margin: 0% 10% 0% 10%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* CLASES */
+.titles, h1, h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2064C1;
+  margin: 2%;
+}
+
+.layout_container_lists, header nav, footer div {
+  display: flex;
+  align-items: center;
+}
+
+.layout_links, header nav ul li a, footer div ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, .location_container, .about_us_container, .contact_schedule_container {
+.basic_container, .in_nature_tour_container, .location_container, footer, .about_us_container, .contact_schedule_container {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
+  flex-direction: row;
 }
 
 /* ANIMACIONES */
@@ -364,6 +793,135 @@ p {
     background-color: #03295e;
   }
 }
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* PARTIALS */
+/* COLORES */
+/* FUENTES */
+/* SOMBRAS */
+/* MEDIDAS */
+/* ETIQUETAS */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #232932;
+  margin: 0% 10% 0% 10%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* CLASES */
+.titles, h1, h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2064C1;
+  margin: 2%;
+}
+
+.layout_container_lists, header nav, footer div {
+  display: flex;
+  align-items: center;
+}
+
+.layout_links, header nav ul li a, footer div ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* COMPONENTES */
+.basic_container, .in_nature_tour_container, .location_container, footer, .about_us_container, .contact_schedule_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0% 5% 0% 5%;
+  flex-direction: row;
+}
+
+/* ANIMACIONES */
+@keyframes live_blues {
+  0% {
+    background-color: #03295e;
+  }
+  50% {
+    background-color: #2064C1;
+  }
+  100% {
+    background-color: #03295e;
+  }
+}
+.main_background {
+  width: 100%;
+  background-image: linear-gradient(180deg, white, #d2e2f8, white);
+  height: 100%;
+}
+
+header {
+  z-index: 1;
+  background-color: #03295e;
+  box-shadow: 0px 5px 5px hsla(215, 94%, 19%, 0.514);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header nav ul li {
+  margin: 10px;
+}
+header nav ul li a {
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  color: #3b80e1;
+  text-decoration: underline;
+}
+
+.header_logo {
+  max-width: 100px;
+  margin-left: -10px;
+}
+
+.header_menu {
+  display: none;
+}
+
+footer {
+  background-color: #03295e;
+}
+footer div ul li {
+  margin: 5px;
+  vertical-align: middle;
+}
+footer div ul li a {
+  text-align: center;
+}
+footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  margin: 2% 2% 3% 2%;
+}
+
 .carousel_container {
   margin: 0% 10% 0% 10%;
 }
@@ -371,20 +929,72 @@ p {
   height: 400px;
 }
 
-.home_container_pictures .home_painting_writing {
+.home_images {
+  justify-content: center;
+}
+
+.home_flipping_container {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_flipping_container_2 {
+  width: 500px;
+  position: relative;
+  margin: 2%;
+  justify-content: center;
+}
+
+.home_image {
   width: 500px;
   margin: 2%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #909090;
   transition: 1s;
 }
-.home_container_pictures .home_painting_writing:hover {
-  transform: scale(1.05);
+
+.flipping_text {
+  width: 500px;
+  margin: 2% 0% 2% 0%;
+  height: 95%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: radial-gradient(circle, rgb(1, 15, 36) 0%, rgba(1, 15, 36, 0.682532388) 59%, rgba(1, 15, 36, 0.3351934524) 86%, rgba(1, 15, 36, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 2s;
+  animation-timing-function: ease-out;
+}
+.flipping_text p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+  justify-content: center;
+  transition: 2s;
+}
+.flipping_text:hover {
+  opacity: 1;
+}
+.flipping_text:hover p {
+  transform: scale(1.2);
 }
 
 .location_container .location_map {
   width: 1200;
   height: 400;
+}
+
+.small_map {
+  display: none;
 }
 
 .quote {
@@ -406,32 +1016,8 @@ p {
 /* PARTIALS */
 /* COLORES */
 /* FUENTES */
-p {
-  font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /* SOMBRAS */
 /* MEDIDAS */
-/* COMPONENTES */
-.basic_container, .in_nature_tour_container, .about_us_container, .contact_schedule_container, .location_container {
-  display: flex;
-  justify-content: space-around;
-  padding: 0% 5% 0% 5%;
-}
-
-/* ANIMACIONES */
-@keyframes live_blues {
-  0% {
-    background-color: #03295e;
-  }
-  50% {
-    background-color: #2064C1;
-  }
-  100% {
-    background-color: #03295e;
-  }
-}
 .in_nature_container {
   width: 80%;
   display: block;
@@ -473,8 +1059,8 @@ p {
   font-size: 0.9rem;
 }
 .in_nature_tour_container .in_nature_sm_container .in_nature_picture_sm {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   justify-self: center;
   border-radius: 50%;
   margin: 5%;
@@ -490,32 +1076,8 @@ p {
 /* PARTIALS */
 /* COLORES */
 /* FUENTES */
-p {
-  font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /* SOMBRAS */
 /* MEDIDAS */
-/* COMPONENTES */
-.basic_container, .about_us_container, .contact_schedule_container, .location_container, .in_nature_tour_container {
-  display: flex;
-  justify-content: space-around;
-  padding: 0% 5% 0% 5%;
-}
-
-/* ANIMACIONES */
-@keyframes live_blues {
-  0% {
-    background-color: #03295e;
-  }
-  50% {
-    background-color: #2064C1;
-  }
-  100% {
-    background-color: #03295e;
-  }
-}
 .collapsables {
   margin: 2% 5% 2% 5% !important;
   border-radius: 10px !important;
@@ -533,10 +1095,11 @@ p {
 
 .our_expo_picture {
   width: 400px;
-  max-height: 300px;
+  height: 300px;
   border-radius: 10px;
   margin: 5px;
   transition: 1s;
+  object-fit: cover;
 }
 .our_expo_picture:hover {
   transform: scale(1.05);
@@ -557,14 +1120,24 @@ p {
   font-weight: normal;
 }
 
+.poems {
+  white-space: pre;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 480px) {
   /* LAYOUT */
   .header_logo {
     width: 50px;
   }
+  footer {
+    display: block;
+  }
   footer div ul {
     display: block;
+  }
+  footer p {
+    padding-bottom: 5%;
   }
   footer div p {
     font-size: 0.7rem;
@@ -599,6 +1172,9 @@ p {
   }
   .location_map {
     margin: 2%;
+  }
+  .large_map {
+    display: none;
   }
   section div iframe {
     width: 450px;
@@ -701,6 +1277,21 @@ p {
   .carousel_container .carousel-item {
     height: 200px !important;
   }
+  .home_image {
+    width: 90%;
+  }
+  .flipping_text {
+    width: 90%;
+    margin: auto;
+    top: 8;
+    left: 24;
+  }
+  .flipping_text p {
+    font-size: 0.8rem;
+  }
+  .flipping_text p:hover {
+    transform: scale(0.6);
+  }
   .location_container {
     display: block;
     justify-content: space-around;
@@ -708,6 +1299,9 @@ p {
   .location_map {
     display: block;
     margin: 5%;
+  }
+  .large_map {
+    display: none;
   }
   section div iframe {
     width: 560px;
@@ -808,7 +1402,10 @@ p {
   }
   .location_map {
     display: block;
-    margin: 5%;
+    margin: 2% 2% 20% 2%;
+  }
+  .small_map {
+    display: none;
   }
   section div iframe {
     width: 560px;
@@ -876,12 +1473,6 @@ p {
   .carousel_container .carousel-item {
     height: 300px;
   }
-  .home_painting_writing {
-    max-width: 400px;
-    margin: 2%;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #909090;
-  }
   .location_container {
     display: flex;
     justify-content: space-between;
@@ -889,7 +1480,7 @@ p {
   .location_container .location_text {
     display: inline-block;
     align-self: center;
-    width: 40%;
+    margin: 2%;
   }
   .location_container .location_text .location_text_p {
     font-size: 1rem;
@@ -897,6 +1488,9 @@ p {
   .location_container .location_map {
     width: 80%;
     margin-right: 3%;
+  }
+  .small_map {
+    display: none;
   }
   /* ABOUT US */
   .about_us_container_history p {
@@ -932,12 +1526,21 @@ p {
 }
 /* DESKTOP GRANDE */
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  .contact_schedule_picture {
-    width: 500px;
-    height: 350px;
+  .home_flipping_container_2 {
+    margin: auto;
   }
   .location_map {
     width: 90%;
+  }
+  .small_map {
+    display: none;
+  }
+  .location_text {
+    margin: 2%;
+  }
+  .contact_schedule_picture {
+    width: 500px;
+    height: 350px;
   }
 }
 

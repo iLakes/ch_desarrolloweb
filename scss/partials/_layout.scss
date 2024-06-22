@@ -4,11 +4,12 @@
 .main_background {
     width: 100%;
     background-image: linear-gradient(180deg, white, $very-light-gray, white);
+    height: 100%;
 }
 
 header {
     z-index: 1;
-    background-color: red;
+    background-color: $dark-blue;
     box-shadow: $header-shadow;
     display: flex;
     justify-content: space-between;
@@ -17,15 +18,15 @@ header {
     nav {
         @extend .layout_container_lists;
         ul {
-            @extend .layout_lists;
             li {
                 margin: 10px;
                 a {
                     @extend .layout_links;
                     transition: 0.5s;
                     &:hover {
-                        color: $light-blue;
-                        font-size: 1.2rem;
+                        color: $very-light-blue;
+                        text-decoration: underline;
+
                     }
                 }
             }
@@ -44,28 +45,28 @@ header {
 
 
 footer {
-    @extend .basic-container;
+    @extend .basic_container;
     background-color: $dark-blue;
 
     div {
         @extend .layout_container_lists;
         ul {
-            @extend .layout_lists;
             li {
                 margin: 5px;
                 vertical-align: middle;
                 a {
                     @extend .layout_links;
+                    text-align: center;
                 }
             }
         }
     }
-}
-
-.copyright {
-    font-family: $main-font;
-    color: $header-footer-color;
-    font-size: 0.8rem;
+    p {
+        font-family: $main-font;
+        color: $header-footer-color;
+        font-size: 0.8rem;
+        margin: 2% 2% 3% 2%;
+    }
 }
 
 

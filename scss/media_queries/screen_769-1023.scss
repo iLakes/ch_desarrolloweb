@@ -10,20 +10,13 @@
         }
     }
 
-    .home_painting_writing {
-        max-width: 400px;
-        margin: 2%;
-        border-radius: $radius;
-        box-shadow: $box-shadow;
-    }
-
     .location_container {
         display: flex;
         justify-content: space-between;
         .location_text {
             display: inline-block;
             align-self: center;
-            width: 40%;
+            margin: 2%;
             .location_text_p {
                 font-size: 1rem;
             }
@@ -32,6 +25,10 @@
             width: 80%;
             margin-right: 3%;
         }
+    }
+
+    .small_map {
+        display: none;
     }
     
 
