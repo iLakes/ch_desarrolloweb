@@ -7,6 +7,28 @@
 
 
 .contact_schedule_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*.contact_schedule_container_2 {
+    display: flex;
+    justify-content: space-around
+}
+
+.contact_schedule_container_3 {
+    display: inline;
+}*/
+
+.contact_schedule_picture {
+    @include picture_size(700px, 400px);
+    box-shadow: $box-shadow;
+    border-radius: $radius;
+}
+
+
+/*
+.contact_schedule_container {
     @extend .basic_container;    
     .contact_p_age  {
         font-style: italic;
@@ -16,7 +38,7 @@
         box-shadow: $box-shadow;
         border-radius: $radius;
     }
-}
+}*/
 
 .contact_form {
     margin: $percent5;

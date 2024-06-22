@@ -3,6 +3,12 @@
 @media only screen and (min-width: 769px) and (max-width:1023px) {
 
     /* HOME */
+
+    #home_small_image {
+        display: none;
+    }
+   
+    
     .carousel_container {
         margin: $percent5;
         .carousel-item {
@@ -11,24 +17,17 @@
     }
 
     .location_container {
-        display: flex;
-        justify-content: space-between;
-        .location_text {
-            display: inline-block;
-            align-self: center;
-            margin: 2%;
-            .location_text_p {
-                font-size: 1rem;
-            }
-        }
-        .location_map {
-            width: 80%;
-            margin-right: 3%;
-        }
+        display: block;
+        align-items: center;
     }
 
-    .small_map {
-        display: none;
+    .location_text {
+        margin: 2% !important;
+    }
+
+    #map {
+        width: 600px !important;
+        height: 350px !important;
     }
     
 

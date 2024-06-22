@@ -48,17 +48,17 @@
     <main>
         <section>
             <h1>Taller de arte y literatura</h1>
-            <div class="carousel_container">
+            <div class="carousel_container" id="home_carousel">
                 <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="multimedia/forest_1.png" class="d-block w-100" alt="Lago que refleja una montaña cubierta de bosques.">
+                        <img src="multimedia/forest_1.png" class="d-block w-100" alt="Carousel 1 de 3. Lago que refleja una montaña cubierta de bosques.">
                     </div>
                     <div class="carousel-item">
-                        <img src="multimedia/forest_2.png" class="d-block w-100" alt="Bosque amarillo nevado.">
+                        <img src="multimedia/forest_2.png" class="d-block w-100" alt="Carousel 2 de 3. Bosque amarillo nevado.">
                     </div>
                     <div class="carousel-item">
-                        <img src="multimedia/forest_3.png" class="d-block w-100" alt="Bosque cubierto de musgo con el sol asomando entre los árboles.">
+                        <img src="multimedia/forest_3.png" class="d-block w-100" alt="Carousel 3 de 3. Bosque cubierto de musgo con el sol asomando entre los árboles.">
                     </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
@@ -71,6 +71,9 @@
                     </button>
                 </div>
             </div>
+
+            <img src="./multimedia/forest_1.png" id="home_small_image" alt="Lago que refleja una montaña cubierta de bosques.">
+
         </section>
         
         <section>
@@ -111,22 +114,23 @@
         <section>
             <h2>Dónde nos encontrás</h2>
 
-            <div class="location_container">
-                <div class="location_text">
-                    <p>Nos reunimos en Bariloche, muy cerquita del centro de la ciudad y a pocos metros del lago.</p>
-                    <p>Nuestra dirección es Libertad 100, San Carlos de Bariloche</p>
-                </div>
-                <div class="location_map large_map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.0429811733256!2d-71.31365038785648!3d-41.133587671213725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b72d352d11d%3A0x4ce1a6eac1757364!2sLibertad%20100%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1sen!2sar!4v1713829478141!5m2!1sen!2sar" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="location_map small_map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.0429811733256!2d-71.31365038785648!3d-41.133587671213725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b72d352d11d%3A0x4ce1a6eac1757364!2sLibertad%20100%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1sen!2sar!4v1713829478141!5m2!1sen!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container mt-4 location_container">
+                <div class="row">
+                    <div class="col-md">
+                        <p class="location_text">Nos reunimos en Bariloche, muy cerquita del centro de la ciudad y a pocos metros del lago.
+                        Nuestra dirección es Libertad 100, San Carlos de Bariloche</p>
+                    </div>
+                    <div class="col-md" id="small_map">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.0429811733256!2d-71.31365038785648!3d-41.133587671213725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b72d352d11d%3A0x4ce1a6eac1757364!2sLibertad%20100%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1sen!2sar!4v1713829478141!5m2!1sen!2sar" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
+              
         </section>
 
-        <section>
+        <section class="quote_container">
             <p class="quote animate__animated animate__bounceInLeft">Una pintura es un poema sin palabras... un poema es una pintura sin colores.</p>
             <p class="quote_authors animate__animated animate__bounceInRight">Horacio (65 a.C.-8 a.C.)... y nosotros</p>
         </section>

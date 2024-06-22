@@ -4,6 +4,9 @@
 @import '../partials/base';
 @import '../partials/layout';
 
+#home_small_image {
+    display: none;
+}
 
 .carousel_container {
     margin: $percent10;
@@ -69,21 +72,9 @@
     &:hover {
         opacity: 1;
         p {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
-}
-
-
-.location_container {
-    @extend .basic_container;
-    .location_map {
-        @include picture_size (1200,400);
-    }
-}
-
-.small_map {
-    display: none;
 }
 
 .quote {

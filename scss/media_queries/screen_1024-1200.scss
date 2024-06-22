@@ -4,28 +4,22 @@
 
     // HOME
 
+    #home_small_image {
+        display: none;
+    }
+   
     .home_flipping_container_2 {
         margin: auto;
     }
-
-    .location_map {
-        width: 90%;
-    }
     
-    .small_map {
-        display: none;
+    #map {
+        width: 600px !important;
+        height: 350px !important;
     }
-
-    .location_text {
-        margin: 2%;
-    }
-
 
     // CONTACT 
     .contact_schedule_picture {
         @include picture_size(500px, 350px);
     }
-
-
 
 }
