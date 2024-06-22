@@ -678,6 +678,22 @@ ul {
     background-color: #03295e;
   }
 }
+.schedule_container {
+  display: flex;
+  padding: 2%;
+}
+
+.left_schedule .right_schedule {
+  flex: 1;
+  padding: 5px;
+}
+
+.new_image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
 .contact_schedule_container {
   display: flex;
   justify-content: space-around;
