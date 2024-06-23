@@ -23,9 +23,22 @@
         margin: $percent5;
     }
 
-        /* LAYOUT */
+        // LAYOUT
+
+    nav {
+        ul {
+            display: none;
+        }
+    }
+
+    .menu_icon {
+        display: flex;
+        width: 40px;
+        color: white;
+    }
+
     .header_logo {
-        width: 50px;
+        width: 80px;
     }
 
     footer {
@@ -40,8 +53,8 @@
     }
 
     
-    /* HOME */
-
+    // HOME
+    
     #home_small_image {
         display: none;
     }
@@ -101,23 +114,43 @@
         margin: 5% 0% 5% 0%;
     }
 
-    /* CONTACTO */
 
-    .contact_schedule_container {
+    /* CONTACT */
+   
+    .schedule_container {
         display: block;
+        margin: auto; 
+
+        div {
+            div {
+                h3 {
+                    margin: 0px;
+                    margin-bottom: 2%;
+                }
+                p {
+                    margin: 2%;
+                }
+            }
+        }
     }
-    
-    .contact_schedule_picture {
-        max-width: 450px;
-        display: block;
-        margin: auto;    
+
+    .schedule_container_2 {
+        padding: $percent5;
     }
+
+    .schedule_image_container {
+        margin: $percent10;
+    }
+
+    .schedule_image {
+        @include picture_size(500px, 350px);
+        }
     
     .contact_form {
         margin: $percent5;
         display: block;
     }
-
+    
     .item_button {
         margin-bottom: 10%;
     }
@@ -130,10 +163,25 @@
 
     /* IN NATURE */
 
-    .in_nature_tour_container {
+    .tour_container {
         display: block;
+        justify-content: center;
+    }
+
+    .tour_container {
+        margin-bottom: 2%;
+    }
+    
+    .in_nature_picture_sm {
+        width: 250px !important;
+        height: 250px !important;
+    }
+        
+    .in_nature_text {
+        font-size: 0.8rem;
     }
 }
+
 
 
 

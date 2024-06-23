@@ -15,7 +15,7 @@
     justify-content: center;
 }
 
-section {
+.schedule_container {
     display: flex;
     div {
         div {
@@ -38,20 +38,14 @@ section {
 }
 
 .schedule_image { 
-    width: 600px;
+    @include picture_size(550px, 380px);
     box-shadow: $box-shadow;
     border-radius: $radius;
 }
-
-/*.contact_schedule_picture {
-    @include picture_size(700px, 400px);
-    box-shadow: $box-shadow;
-    border-radius: $radius;
-}
-*/
 
 .contact_form {
     margin: $percent5;
+    margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -61,37 +55,43 @@ section {
     "phone email"
     "button button";
 
-    .item_button .item_email .item_name .item_phone .item_surname {
-        padding: 2%;
+    input {
+        width: 300px;
+        height: 30px;
+        border-radius: $radius;
+        border: 2px solid $middle-gray ;
     }
-
-    .item_name {
-        grid-area: name;
-    }
-    .item_surname {
-        grid-area: surname;
-    }
-    .item_phone {
-        grid-area: phone;
-    }
-    .item_email {
-        grid-area: email;
-    }
-    .item_button {
-        grid-area: button;
-        margin: 2%;
-    }
-    
-   .btn {
-        background-color: $dark-blue;
-        width: 100px;
-        color: white;
-        align-self: flex-end;
-        box-shadow: $box-shadow;
-            &:hover {
-                background-color: $dark-blue-hover;
-                box-shadow: $no-shadow;
-             }
-    }
-    
 }
+
+.item_name {
+    grid-area: name;
+}
+
+.item_surname {
+    grid-area: surname;
+}
+
+.item_phone {
+    grid-area: phone;
+}
+.item_email {
+    grid-area: email;
+}
+.item_button {
+    grid-area: button;
+    margin: 2% 0% 2% 0%;
+}
+
+.btn {
+    background-color: $dark-blue;
+    width: 100px;
+    color: white;
+    align-self: flex-end;
+    box-shadow: $box-shadow;
+        &:hover {
+            background-color: $dark-blue-hover;
+            box-shadow: $no-shadow;
+            color: white;
+         }
+}
+    

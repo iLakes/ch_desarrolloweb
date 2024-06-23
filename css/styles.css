@@ -64,7 +64,7 @@ ul {
 }
 
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, footer {
+.basic_container, .tour_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
@@ -141,7 +141,7 @@ ul {
 }
 
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, footer {
+.basic_container, .tour_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
@@ -271,7 +271,7 @@ ul {
 }
 
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, footer {
+.basic_container, .tour_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
@@ -348,7 +348,7 @@ ul {
 }
 
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, footer {
+.basic_container, .tour_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
@@ -533,7 +533,7 @@ ul {
 }
 
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, footer {
+.basic_container, .tour_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
@@ -657,7 +657,7 @@ ul {
 }
 
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, footer {
+.basic_container, .tour_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
@@ -685,71 +685,77 @@ ul {
   justify-content: center;
 }
 
-section {
+.schedule_container {
   display: flex;
 }
-section div div h3 {
+.schedule_container div div h3 {
   padding: 0;
   margin: 0% 5% 0% 5%;
   margin-bottom: 5%;
 }
-section div div p {
+.schedule_container div div p {
   padding: 0;
   margin: 0% 5% 0% 5%;
 }
-section div div ul {
+.schedule_container div div ul {
   list-style-type: disc;
   display: block;
 }
 
 .schedule_image {
-  width: 600px;
+  width: 550px;
+  height: 380px;
   box-shadow: 5px 5px 5px #909090;
   border-radius: 10px;
 }
 
-/*.contact_schedule_picture {
-    @include picture_size(700px, 400px);
-    box-shadow: $box-shadow;
-    border-radius: $radius;
-}
-*/
 .contact_form {
   margin: 0% 5% 0% 5%;
+  margin-top: 2%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "name surname" "phone email" "button button";
 }
-.contact_form .item_button .item_email .item_name .item_phone .item_surname {
-  padding: 2%;
+.contact_form input {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #63676d;
 }
-.contact_form .item_name {
+
+.item_name {
   grid-area: name;
 }
-.contact_form .item_surname {
+
+.item_surname {
   grid-area: surname;
 }
-.contact_form .item_phone {
+
+.item_phone {
   grid-area: phone;
 }
-.contact_form .item_email {
+
+.item_email {
   grid-area: email;
 }
-.contact_form .item_button {
+
+.item_button {
   grid-area: button;
-  margin: 2%;
+  margin: 2% 0% 2% 0%;
 }
-.contact_form .btn {
+
+.btn {
   background-color: #03295e;
   width: 100px;
   color: white;
   align-self: flex-end;
   box-shadow: 5px 5px 5px #909090;
 }
-.contact_form .btn:hover {
+.btn:hover {
   background-color: #0244a2;
   box-shadow: 0px 0px 0px;
+  color: white;
 }
 
 /* PARTIALS */
@@ -812,7 +818,7 @@ ul {
 }
 
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, footer {
+.basic_container, .tour_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
@@ -889,7 +895,7 @@ ul {
 }
 
 /* COMPONENTES */
-.basic_container, .in_nature_tour_container, footer {
+.basic_container, .tour_container, footer {
   display: flex;
   justify-content: space-around;
   padding: 0% 5% 0% 5%;
@@ -969,6 +975,10 @@ footer p {
   height: 400px;
 }
 
+.menu_icon {
+  display: none;
+}
+
 .home_images {
   justify-content: center;
 }
@@ -976,6 +986,7 @@ footer p {
 .home_flipping_container {
   margin: 1%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -1082,14 +1093,24 @@ footer p {
   animation-delay: 0.5s;
 }
 
-.in_nature_tour_container .in_nature_sm_container {
+.tour_container {
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.tour_container .tour_container_2 {
+  justify-content: center;
+  margin: auto;
+}
+.tour_container .tour_container_2 .tour_container_3 {
+  display: flex;
   justify-content: center;
 }
-.in_nature_tour_container .in_nature_sm_container .in_nature_text {
+.tour_container .tour_container_2 .tour_container_3 .in_nature_text {
   margin: 2%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
-.in_nature_tour_container .in_nature_sm_container .in_nature_picture_sm {
+.tour_container .tour_container_2 .tour_container_3 .in_nature_picture_sm {
   width: 300px;
   height: 300px;
   justify-self: center;
@@ -1097,10 +1118,10 @@ footer p {
   margin: 5%;
   transition: 1s;
 }
-.in_nature_tour_container .in_nature_sm_container .in_nature_picture_sm:hover {
+.tour_container .tour_container_2 .tour_container_3 .in_nature_picture_sm:hover {
   filter: brightness(70%) grayscale(1);
 }
-.in_nature_tour_container .in_nature_sm_container .in_nature_text {
+.tour_container .tour_container_2 .tour_container_3 .in_nature_text {
   width: 80%;
 }
 
@@ -1122,6 +1143,13 @@ footer p {
 .our_expo_container .collapse {
   border: none;
   background-color: #E4E3E3;
+}
+
+.expanded_card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center !important;
 }
 
 .our_expo_picture {
@@ -1174,7 +1202,14 @@ footer p {
     font-size: 0.8rem;
     margin: 0% 5% 0% 5%;
   }
-  /* LAYOUT */
+  nav ul {
+    display: none;
+  }
+  .menu_icon {
+    display: flex;
+    width: 40px;
+    color: white;
+  }
   .header_logo {
     width: 50px;
   }
@@ -1192,7 +1227,6 @@ footer p {
     font-size: 0.7rem;
     text-align: center;
   }
-  /* HOME */
   #home_carousel {
     display: none !important;
   }
@@ -1258,14 +1292,27 @@ footer p {
     width: 350px;
     margin: 5% 0% 5% 0%;
   }
-  /* CONTACT */
-  .contact_schedule_container {
-    display: block;
-  }
-  .contact_schedule_picture {
-    max-width: 450px;
+  .schedule_container {
     display: block;
     margin: auto;
+  }
+  .schedule_container div div h3 {
+    margin: 0px;
+    margin-bottom: 2%;
+  }
+  .schedule_container div div p {
+    margin: 2%;
+  }
+  .schedule_container_2 {
+    padding: 0% 5% 0% 5%;
+  }
+  .schedule_image_container {
+    margin: 0% 5% 0% 5%;
+  }
+  .schedule_image {
+    width: 300px;
+    height: 200px;
+    max-width: 350px;
   }
   .contact_form {
     margin: 0% 5% 0% 5%;
@@ -1274,7 +1321,6 @@ footer p {
   .item_button {
     margin-bottom: 10%;
   }
-  /* EXPO */
   .collapsables {
     display: none;
   }
@@ -1283,14 +1329,29 @@ footer p {
     margin: 5%;
   }
   .expo_pic {
-    max-width: 450px;
+    width: 350px;
     box-shadow: 5px 5px 5px #909090;
     margin: 2%;
     border-radius: 10px;
   }
   /* IN NATURE */
-  .in_nature_tour_container {
+  .in_nature_container {
     display: block;
+    justify-content: center;
+  }
+  .tour_container {
+    display: block;
+    justify-content: center;
+  }
+  .tour_container {
+    margin-bottom: 2%;
+  }
+  .in_nature_picture_sm {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .in_nature_text {
+    font-size: 0.8rem;
   }
 }
 /* TABLET CHICA */
@@ -1311,7 +1372,14 @@ footer p {
     font-size: 1rem;
     margin: 0% 5% 0% 5%;
   }
-  /* LAYOUT */
+  nav ul {
+    display: none;
+  }
+  .menu_icon {
+    display: flex;
+    width: 40px;
+    color: white;
+  }
   .header_logo {
     width: 50px;
   }
@@ -1387,13 +1455,26 @@ footer p {
     margin: 5% 0% 5% 0%;
   }
   /* CONTACT */
-  .contact_schedule_container {
-    display: block;
-  }
-  .contact_schedule_picture {
-    max-width: 450px;
+  .schedule_container {
     display: block;
     margin: auto;
+  }
+  .schedule_container div div h3 {
+    margin: 0px;
+    margin-bottom: 2%;
+  }
+  .schedule_container div div p {
+    margin: 2%;
+  }
+  .schedule_container_2 {
+    padding: 0% 5% 0% 5%;
+  }
+  .schedule_image_container {
+    margin: 0% 5% 0% 5%;
+  }
+  .schedule_image {
+    width: 450px;
+    height: 280px;
   }
   .contact_form {
     margin: 0% 5% 0% 5%;
@@ -1402,13 +1483,24 @@ footer p {
   .item_button {
     margin-bottom: 10%;
   }
-  /* EXPO */
-  .expo_sm {
-    display: none;
-  }
-  /* EN LA NATURALEZA */
-  .in_nature_tour_container {
+  /* IN NATURE */
+  .tour_container {
     display: block;
+    justify-content: center;
+  }
+  .tour_container {
+    margin-bottom: 2%;
+  }
+  .in_nature_picture_sm {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .in_nature_text {
+    font-size: 0.8rem;
+  }
+  .our_expo_picture {
+    width: 350px;
+    height: 280px;
   }
 }
 /* TABLET NORMAL */
@@ -1430,9 +1522,16 @@ footer p {
     font-size: 1rem;
     margin: 0% 5% 0% 5%;
   }
-  /* LAYOUT */
+  nav ul {
+    display: none;
+  }
+  .menu_icon {
+    display: flex;
+    width: 40px;
+    color: white;
+  }
   .header_logo {
-    width: 50px;
+    width: 80px;
   }
   footer div ul {
     display: block;
@@ -1440,7 +1539,6 @@ footer p {
   footer div p {
     font-size: 0.7rem;
   }
-  /* HOME */
   #home_small_image {
     display: none;
   }
@@ -1485,14 +1583,27 @@ footer p {
   .about_us_picture {
     margin: 5% 0% 5% 0%;
   }
-  /* CONTACTO */
-  .contact_schedule_container {
-    display: block;
-  }
-  .contact_schedule_picture {
-    max-width: 450px;
+  /* CONTACT */
+  .schedule_container {
     display: block;
     margin: auto;
+  }
+  .schedule_container div div h3 {
+    margin: 0px;
+    margin-bottom: 2%;
+  }
+  .schedule_container div div p {
+    margin: 2%;
+  }
+  .schedule_container_2 {
+    padding: 0% 5% 0% 5%;
+  }
+  .schedule_image_container {
+    margin: 0% 10% 0% 10%;
+  }
+  .schedule_image {
+    width: 500px;
+    height: 350px;
   }
   .contact_form {
     margin: 0% 5% 0% 5%;
@@ -1506,12 +1617,26 @@ footer p {
     display: none;
   }
   /* IN NATURE */
-  .in_nature_tour_container {
+  .tour_container {
     display: block;
+    justify-content: center;
+  }
+  .tour_container {
+    margin-bottom: 2%;
+  }
+  .in_nature_picture_sm {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .in_nature_text {
+    font-size: 0.8rem;
   }
 }
 /* DESKTOP CHICA */
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .menu_icon {
+    display: none;
+  }
   /* HOME */
   #home_small_image {
     display: none;
@@ -1545,13 +1670,30 @@ footer p {
     top: 80px;
   }
   /* CONTACT */
-  .contact_schedule_picture {
-    width: 350px !important;
-    height: 250px !important;
-    display: block;
-    margin: auto;
+  .schedule_image {
+    width: 350px;
+    height: 250px;
   }
-  /* EXPO */
+  .schedule_container div div h3 {
+    margin: 0px;
+    margin-bottom: 2%;
+  }
+  .schedule_container div div p {
+    margin: 2%;
+  }
+  .schedule_container_2 {
+    padding: 0% 5% 0% 5%;
+  }
+  .tour_container {
+    margin-bottom: 2%;
+  }
+  .in_nature_picture_sm {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .in_nature_text {
+    font-size: 0.8rem;
+  }
   .collapse {
     border-radius: 10px;
     margin: 0% 5% 0% 5%;
@@ -1567,6 +1709,9 @@ footer p {
 }
 /* DESKTOP GRANDE */
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .menu_icon {
+    display: none;
+  }
   #home_small_image {
     display: none;
   }
@@ -1577,9 +1722,13 @@ footer p {
     width: 600px !important;
     height: 350px !important;
   }
-  .contact_schedule_picture {
-    width: 500px;
-    height: 350px;
+  .schedule_image {
+    width: 450px;
+    height: 320px;
+  }
+  .in_nature_picture_sm {
+    width: 200px !important;
+    height: 200px !important;
   }
 }
 

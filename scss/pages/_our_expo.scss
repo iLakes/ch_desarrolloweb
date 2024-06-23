@@ -18,6 +18,12 @@
     }
 }
 
+.expanded_card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center !important;
+}
 
 .our_expo_picture {
     width: 400px;

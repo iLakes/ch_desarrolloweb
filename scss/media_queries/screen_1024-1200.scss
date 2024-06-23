@@ -2,6 +2,12 @@
 
 @media only screen and (min-width: 1024px) and (max-width:1200px) {
 
+    // LAYOUT
+
+    .menu_icon {
+        display: none;
+    }
+    
     // HOME
 
     #home_small_image {
@@ -18,8 +24,14 @@
     }
 
     // CONTACT 
-    .contact_schedule_picture {
-        @include picture_size(500px, 350px);
+    .schedule_image {
+        @include picture_size(450px, 320px);
     }
 
+    // IN NATURE
+
+    .in_nature_picture_sm {
+        width: 200px !important;
+        height: 200px !important;
+    }
 }

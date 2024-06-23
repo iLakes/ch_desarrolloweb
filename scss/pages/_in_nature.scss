@@ -37,29 +37,38 @@
     }
 }
 
-.in_nature_tour_container {
+.tour_container {
     @extend .basic_container;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5%;
 
-    .in_nature_sm_container {
+    .tour_container_2 {
         justify-content: center;
+        margin: auto;
 
-        .in_nature_text {
-            margin: 2%;
-            font-size: 0.9rem;
-        }
-        .in_nature_picture_sm {
-            @include picture_size (300px, 300px);
-            justify-self: center;
-            border-radius: 50%;
-            margin: 5%;
+        .tour_container_3 {
+            display: flex;
+            justify-content: center;
 
-            transition: 1s;
-            &:hover {
-                filter: brightness(70%) grayscale(1.0);
+            .in_nature_text {
+                margin: 2%;
+                font-size: 1rem;
+            }
+            .in_nature_picture_sm {
+                @include picture_size (300px, 300px);
+                justify-self: center;
+                border-radius: 50%;
+                margin: 5%;
+
+                transition: 1s;
+                &:hover {
+                    filter: brightness(70%) grayscale(1.0);
+                }
+            }
+            .in_nature_text {
+                width: 80%;
             }
         }
-        .in_nature_text {
-            width: 80%;
-        }
-}
+    }
 }

@@ -22,7 +22,19 @@
         margin: $percent5;
     }
 
-    /* LAYOUT */
+    // LAYOUT
+
+    nav {
+        ul {
+            display: none;
+        }
+    }
+    
+    .menu_icon {
+        display: flex;
+        width: 40px;
+        color: white;
+    }
 
     .header_logo {
         width: 50px;
@@ -126,38 +138,70 @@
     
 
     /* CONTACT */
+   
+    .schedule_container {
+        display: block;
+        margin: auto; 
 
-    .contact_schedule_container {
-        display: block;
+        div {
+            div {
+                h3 {
+                    margin: 0px;
+                    margin-bottom: 2%;
+                }
+                p {
+                    margin: 2%;
+                }
+            }
+        }
     }
-    
-    .contact_schedule_picture {
-        max-width: 450px;
-        display: block;
-        margin: auto;    
+
+    .schedule_container_2 {
+        padding: $percent5;
     }
+
+    .schedule_image_container {
+        margin: $percent5;
+    }
+
+    .schedule_image {
+        @include picture_size(450px, 280px);
+        }
     
     .contact_form {
-        margin:  $percent5;
+        margin: $percent5;
         display: block;
     }
-
+    
     .item_button {
         margin-bottom: 10%;
     }
 
-    /* EXPO */
-    
-    .expo_sm {
-        display: none;
-    }
+    /* IN NATURE */
 
-    /* EN LA NATURALEZA */
-
-    .in_nature_tour_container {
+    .tour_container {
         display: block;
+        justify-content: center;
     }
 
+    .tour_container {
+        margin-bottom: 2%;
+    }
+    
+    .in_nature_picture_sm {
+        width: 250px !important;
+        height: 250px !important;
+    }
+        
+    .in_nature_text {
+        font-size: 0.8rem;
+    }
+
+    // OUR EXPO
+
+    .our_expo_picture {
+        @include picture_size (350px, 280px);
+    }
 }
 
 

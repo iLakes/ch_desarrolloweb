@@ -2,13 +2,19 @@
 
 @media only screen and (min-width: 769px) and (max-width:1023px) {
 
+    // LAYOUT
+
+    .menu_icon {
+        display: none;
+    }
+    
+
     /* HOME */
 
     #home_small_image {
         display: none;
     }
    
-    
     .carousel_container {
         margin: $percent5;
         .carousel-item {
@@ -48,15 +54,46 @@
 
 
     /* CONTACT */
-    
-    .contact_schedule_picture {
-        width: 350px !important;
-        height: 250px !important;
-        display: block;
-        margin: auto;    
+
+    .schedule_image {
+        @include picture_size(350px, 250px);
     }
     
-    /* EXPO */
+    .schedule_container {
+        div {
+            div {
+                h3 {
+                    margin: 0px;
+                    margin-bottom: 2%;
+                }
+                p {
+                    margin: 2%;
+                }
+            }
+        }
+    }
+
+    .schedule_container_2 {
+        padding: $percent5;
+    }
+
+    // IN NATURE
+
+    .tour_container {
+        margin-bottom: 2%;
+    }
+
+    .in_nature_picture_sm {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    
+    .in_nature_text {
+        font-size: 0.8rem;
+    }
+
+
+    // EXPO
     
     .collapse {
         border-radius: $radius;
@@ -72,6 +109,7 @@
     .expo_sm {
         display: none;
     }
+
 
 }
 
