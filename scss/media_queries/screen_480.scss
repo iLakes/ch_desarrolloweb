@@ -27,18 +27,6 @@
 
 
     // LAYOUT
-    
-    nav {
-        ul {
-            display: none;
-        }
-    }
-
-    .menu_icon {
-        display: flex;
-        width: 40px;
-        color: white;
-    }
 
     .header_logo {
         width: 50px;
@@ -72,29 +60,32 @@
         border-radius: $radius;
         width: 400px;
     }
-   
-   .home_images_container {
-        display: block;
-        justify-content: center;
-   }
 
    .home_image {
-        width: 350px;
-        max-width: fit-content;
+        width: 80%;
+        height: 80%;
     }
 
     .flipping_text {
-        width: 350px;
-        max-width: fit-content;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        top: 3%;
+        left: 2%;
         p {
-            font-size: 1rem;
-        }
-        &:hover {
-               p {
+            font-size: 0.8rem;
+            &:hover {
                 transform: none;
-               } 
+            }
         }
     }  
+
+
+
+
+
+
+
 
     .location_container {
         display: block;

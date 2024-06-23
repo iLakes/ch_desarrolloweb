@@ -40,12 +40,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, footer div, header nav {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, footer div ul li a, header nav ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -105,12 +105,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, footer div, header nav {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, footer div ul li a, header nav ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -149,13 +149,55 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-header nav ul li {
-  margin: 10px;
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-header nav ul li a {
-  transition: 0.5s;
+nav .menu_hamburguesa {
+  display: none;
 }
-header nav ul li a:hover {
+nav .menu_hamburguesa:checked + .links_container {
+  opacity: 1;
+  height: 100vh;
+}
+nav .label_hamburguesa {
+  color: white;
+  cursor: pointer;
+  width: 30px;
+}
+nav ul {
+  width: 300px;
+  background-color: #03295e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 10%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+nav ul li {
+  justify-content: left;
+}
+nav ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2%;
+  text-align: left;
+}
+nav ul li a:hover {
   color: #3b80e1;
   text-decoration: underline;
 }
@@ -163,10 +205,6 @@ header nav ul li a:hover {
 .header_logo {
   max-width: 100px;
   margin-left: -10px;
-}
-
-.header_menu {
-  display: none;
 }
 
 footer {
@@ -224,12 +262,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -289,12 +327,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -333,13 +371,55 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-header nav ul li {
-  margin: 10px;
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-header nav ul li a {
-  transition: 0.5s;
+nav .menu_hamburguesa {
+  display: none;
 }
-header nav ul li a:hover {
+nav .menu_hamburguesa:checked + .links_container {
+  opacity: 1;
+  height: 100vh;
+}
+nav .label_hamburguesa {
+  color: white;
+  cursor: pointer;
+  width: 30px;
+}
+nav ul {
+  width: 300px;
+  background-color: #03295e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 10%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+nav ul li {
+  justify-content: left;
+}
+nav ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2%;
+  text-align: left;
+}
+nav ul li a:hover {
   color: #3b80e1;
   text-decoration: underline;
 }
@@ -347,10 +427,6 @@ header nav ul li a:hover {
 .header_logo {
   max-width: 100px;
   margin-left: -10px;
-}
-
-.header_menu {
-  display: none;
 }
 
 footer {
@@ -458,12 +534,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -523,12 +599,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -567,13 +643,55 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-header nav ul li {
-  margin: 10px;
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-header nav ul li a {
-  transition: 0.5s;
+nav .menu_hamburguesa {
+  display: none;
 }
-header nav ul li a:hover {
+nav .menu_hamburguesa:checked + .links_container {
+  opacity: 1;
+  height: 100vh;
+}
+nav .label_hamburguesa {
+  color: white;
+  cursor: pointer;
+  width: 30px;
+}
+nav ul {
+  width: 300px;
+  background-color: #03295e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 10%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+nav ul li {
+  justify-content: left;
+}
+nav ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2%;
+  text-align: left;
+}
+nav ul li a:hover {
   color: #3b80e1;
   text-decoration: underline;
 }
@@ -581,10 +699,6 @@ header nav ul li a:hover {
 .header_logo {
   max-width: 100px;
   margin-left: -10px;
-}
-
-.header_menu {
-  display: none;
 }
 
 footer {
@@ -720,12 +834,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -785,12 +899,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -829,13 +943,55 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-header nav ul li {
-  margin: 10px;
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-header nav ul li a {
-  transition: 0.5s;
+nav .menu_hamburguesa {
+  display: none;
 }
-header nav ul li a:hover {
+nav .menu_hamburguesa:checked + .links_container {
+  opacity: 1;
+  height: 100vh;
+}
+nav .label_hamburguesa {
+  color: white;
+  cursor: pointer;
+  width: 30px;
+}
+nav ul {
+  width: 300px;
+  background-color: #03295e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 10%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+nav ul li {
+  justify-content: left;
+}
+nav ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2%;
+  text-align: left;
+}
+nav ul li a:hover {
   color: #3b80e1;
   text-decoration: underline;
 }
@@ -843,10 +999,6 @@ header nav ul li a:hover {
 .header_logo {
   max-width: 100px;
   margin-left: -10px;
-}
-
-.header_menu {
-  display: none;
 }
 
 footer {
@@ -876,10 +1028,6 @@ footer p {
 }
 .carousel_container .carousel-item {
   height: 400px;
-}
-
-.menu_icon {
-  display: none;
 }
 
 .home_images_container {
@@ -1001,12 +1149,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -1066,12 +1214,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -1110,13 +1258,55 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-header nav ul li {
-  margin: 10px;
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-header nav ul li a {
-  transition: 0.5s;
+nav .menu_hamburguesa {
+  display: none;
 }
-header nav ul li a:hover {
+nav .menu_hamburguesa:checked + .links_container {
+  opacity: 1;
+  height: 100vh;
+}
+nav .label_hamburguesa {
+  color: white;
+  cursor: pointer;
+  width: 30px;
+}
+nav ul {
+  width: 300px;
+  background-color: #03295e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 10%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+nav ul li {
+  justify-content: left;
+}
+nav ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2%;
+  text-align: left;
+}
+nav ul li a:hover {
   color: #3b80e1;
   text-decoration: underline;
 }
@@ -1124,10 +1314,6 @@ header nav ul li a:hover {
 .header_logo {
   max-width: 100px;
   margin-left: -10px;
-}
-
-.header_menu {
-  display: none;
 }
 
 footer {
@@ -1246,12 +1432,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -1311,12 +1497,12 @@ ul {
   margin: 2%;
 }
 
-.layout_container_lists, header nav, footer div {
+.layout_container_lists, footer div {
   display: flex;
   align-items: center;
 }
 
-.layout_links, header nav ul li a, footer div ul li a {
+.layout_links, footer div ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
@@ -1355,13 +1541,55 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-header nav ul li {
-  margin: 10px;
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-header nav ul li a {
-  transition: 0.5s;
+nav .menu_hamburguesa {
+  display: none;
 }
-header nav ul li a:hover {
+nav .menu_hamburguesa:checked + .links_container {
+  opacity: 1;
+  height: 100vh;
+}
+nav .label_hamburguesa {
+  color: white;
+  cursor: pointer;
+  width: 30px;
+}
+nav ul {
+  width: 300px;
+  background-color: #03295e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 10%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+nav ul li {
+  justify-content: left;
+}
+nav ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2%;
+  text-align: left;
+}
+nav ul li a:hover {
   color: #3b80e1;
   text-decoration: underline;
 }
@@ -1369,10 +1597,6 @@ header nav ul li a:hover {
 .header_logo {
   max-width: 100px;
   margin-left: -10px;
-}
-
-.header_menu {
-  display: none;
 }
 
 footer {
@@ -1464,14 +1688,6 @@ footer p {
     font-size: 0.8rem;
     margin: 0% 5% 0% 5%;
   }
-  nav ul {
-    display: none;
-  }
-  .menu_icon {
-    display: flex;
-    width: 40px;
-    color: white;
-  }
   .header_logo {
     width: 50px;
   }
@@ -1497,22 +1713,21 @@ footer p {
     border-radius: 10px;
     width: 400px;
   }
-  .home_images_container {
-    display: block;
-    justify-content: center;
-  }
   .home_image {
-    width: 350px;
-    max-width: fit-content;
+    width: 80%;
+    height: 80%;
   }
   .flipping_text {
-    width: 350px;
-    max-width: fit-content;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    top: 3%;
+    left: 2%;
   }
   .flipping_text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
-  .flipping_text:hover p {
+  .flipping_text p:hover {
     transform: none;
   }
   .location_container {
@@ -1631,14 +1846,6 @@ footer p {
     font-size: 1rem;
     margin: 0% 5% 0% 5%;
   }
-  nav ul {
-    display: none;
-  }
-  .menu_icon {
-    display: flex;
-    width: 40px;
-    color: white;
-  }
   .header_logo {
     width: 50px;
   }
@@ -1662,7 +1869,7 @@ footer p {
     margin: 0% 5% 0% 5%;
     box-shadow: 5px 5px 5px #909090;
     border-radius: 10px;
-    width: 500px;
+    width: 460px;
   }
   .carousel-control-next {
     height: 100px !important;
@@ -1671,10 +1878,12 @@ footer p {
     height: 200px !important;
   }
   .home_image {
-    width: 90%;
+    width: 80%;
+    height: 80%;
   }
   .flipping_text {
-    width: 90%;
+    width: 80%;
+    height: 80%;
     margin: auto;
     top: 3%;
     left: 2%;
@@ -1779,14 +1988,6 @@ footer p {
     font-size: 1rem;
     margin: 0% 5% 0% 5%;
   }
-  nav ul {
-    display: none;
-  }
-  .menu_icon {
-    display: flex;
-    width: 40px;
-    color: white;
-  }
   .header_logo {
     width: 80px;
   }
@@ -1882,9 +2083,6 @@ footer p {
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-  .menu_icon {
-    display: none;
-  }
   #home_small_image {
     display: none;
   }
@@ -1950,8 +2148,32 @@ footer p {
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  .menu_icon {
+  nav {
+    align-self: center;
+    align-items: center;
+  }
+  nav .label_hamburguesa {
     display: none;
+  }
+  nav ul {
+    padding: 0;
+    opacity: 1;
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    padding: 0.1rem 0.7rem;
+  }
+  nav ul li a:hover {
+    color: #2064C1;
+    text-decoration: underline;
   }
   #home_small_image {
     display: none;
@@ -1970,6 +2192,35 @@ footer p {
   .in_nature_picture_sm {
     width: 200px !important;
     height: 200px !important;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  nav {
+    align-self: center;
+    align-items: center;
+  }
+  nav .label_hamburguesa {
+    display: none;
+  }
+  nav ul {
+    padding: 0;
+    opacity: 1;
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    padding: 0.1rem 0.7rem;
+  }
+  nav ul li a:hover {
+    color: #2064C1;
+    text-decoration: underline;
   }
 }
 

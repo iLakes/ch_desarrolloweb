@@ -25,18 +25,6 @@
 
     // LAYOUT
 
-    nav {
-        ul {
-            display: none;
-        }
-    }
-    
-    .menu_icon {
-        display: flex;
-        width: 40px;
-        color: white;
-    }
-
     .header_logo {
         width: 50px;
     }
@@ -67,7 +55,7 @@
         margin: $percent5;
         box-shadow: $box-shadow;
         border-radius: $radius;
-        width: 500px;
+        width: 460px;
     }
 
     .carousel-control-next {
@@ -79,11 +67,13 @@
     }
 
     .home_image {
-        width: 90%;
+        width: 80%;
+        height: 80%;
     }
     
     .flipping_text {
-        width: 90%;
+        width: 80%;
+        height: 80%;
         margin: auto;
         top: 3%;
         left: 2%;
@@ -93,7 +83,6 @@
                 transform: none;
             }
         }
-
     }
 
     .location_container {

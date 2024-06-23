@@ -19,20 +19,64 @@ header {
     display: flex;
     justify-content: space-between;
     padding: $padding-box;
+}
 
-    nav {
-        @extend .layout_container_lists;
-        ul {
-            li {
-                margin: 10px;
-                a {
-                    @extend .layout_links;
-                    transition: 0.5s;
-                    &:hover {
-                        color: $very-light-blue;
-                        text-decoration: underline;
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
-                    }
+    .menu_hamburguesa{
+        display: none;
+    }
+
+    .menu_hamburguesa:checked + .links_container {
+        opacity: 1;
+        height: 100vh;
+    }
+
+    .label_hamburguesa {
+        color: white;
+        cursor: pointer;
+            width: 30px;
+    }
+
+    ul {
+        width: 300px;
+        background-color: $dark-blue;
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0; // yo
+    
+        padding-top: 10%;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        gap: 2rem;
+        z-index: 1000;
+    
+        transition: all .3s;
+    
+        li {
+            justify-content: left;
+    
+            a {
+                font-family: $main-font;
+                font-size: 1rem;
+                color: $header-footer-color;
+                text-decoration: none;
+                margin-bottom: 2%;
+                text-align: left;
+                &:hover {
+                    color: $very-light-blue;
+                    text-decoration: underline;
+
                 }
             }
         }
@@ -42,10 +86,6 @@ header {
 .header_logo {
     max-width: 100px;
     margin-left: -10px;
-}
-
-.header_menu {
-    display: none;
 }
 
 
@@ -74,5 +114,3 @@ footer {
         margin: 2% 2% 3% 2%;
     }
 }
-
-

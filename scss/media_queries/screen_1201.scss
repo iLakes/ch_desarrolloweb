@@ -1,6 +1,6 @@
-// DESKTOP GRANDE
+// DESKTOP MUY GRANDE
 
-@media only screen and (min-width: 1024px) and (max-width:1200px) {
+@media only screen and (min-width: 1201px) {
 
     // LAYOUT
 
@@ -37,33 +37,4 @@
         }
     }
 
-    // HOME
-
-    #home_small_image {
-        display: none;
-    }
-   
-    .home_flipping_container_2 {
-        margin: auto;
-    }
-    
-    #map {
-        width: 600px !important;
-        height: 350px !important;
-    }
-
-
-    // CONTACT 
-
-    .schedule_image {
-        @include picture_size(450px, 320px);
-    }
-
-    
-    // IN NATURE
-
-    .in_nature_picture_sm {
-        width: 200px !important;
-        height: 200px !important;
-    }
 }
