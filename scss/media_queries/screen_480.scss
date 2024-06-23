@@ -1,8 +1,9 @@
-// mobile
+// MOBILE
 
 @media only screen and (max-width:480px) {
 
-    /* FUENTES */
+    // FUENTES
+
     h1  {
         font-size: 2rem;
     }
@@ -23,6 +24,7 @@
         font-size: 0.8rem;
         margin:  $percent5;
     }
+
 
     // LAYOUT
     
@@ -50,17 +52,14 @@
             }
         }
         p {
-            padding-bottom: 5%
+            padding-bottom: 5%;
+            font-size: 0.7rem;
+            text-align: center; 
         }
     }
-    
-    footer p {
-        font-size: 0.7rem;
-        text-align: center;  
-    }
+
 
     // HOME
-
 
     #home_carousel {
         display: none !important;
@@ -73,13 +72,13 @@
         border-radius: $radius;
         width: 400px;
     }
-
-    .home_flipping_container_2 {
+   
+   .home_images_container {
+        display: block;
         justify-content: center;
-        align-items: center;
-    }
-    
-    .home_image {
+   }
+
+   .home_image {
         width: 350px;
         max-width: fit-content;
     }
@@ -87,7 +86,6 @@
     .flipping_text {
         width: 350px;
         max-width: fit-content;
-        left: 65px;
         p {
             font-size: 1rem;
         }
@@ -125,13 +123,15 @@
         font-size: 0.7rem;
     }
 
-    /* ABOUT US */
+
+    // ABOUT US
 
     .about_us_container {
         display: block;
     }
 
     .about_us_picture_container {
+        display: flex;
         justify-content: center;
     }
 
@@ -142,8 +142,10 @@
     
     .about_us_picture {
         width: 350px;
+        height: 500px;
         margin: 5% 0% 5% 0%;
     } 
+
 
     // CONTACT
    
@@ -186,15 +188,21 @@
         margin-bottom: 10%;
     }
 
+
     // OUR EXPO
     
     .collapsables {
         display: none;
     }
     
-    .expo_sm {
+    .mobile_container {
         display: block;
         margin: 5%;
+        
+        .expo_sm {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .expo_pic {
@@ -204,20 +212,17 @@
         border-radius: 10px;
     }
 
-    /* IN NATURE */
+    
+    // IN NATURE
 
     .in_nature_container {
         display: block;
         justify-content: center;
     }
 
-
     .tour_container {
         display: block;
         justify-content: center;
-    }
-
-    .tour_container {
         margin-bottom: 2%;
     }
     

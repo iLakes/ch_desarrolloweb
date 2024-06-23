@@ -1,5 +1,10 @@
-@import './variables';
-@import './base';
+// PARTIALS
+
+@import '../partials/variables';
+@import '../partials/base';
+
+
+// LAYOUT
 
 .main_background {
     width: 100%;
@@ -47,6 +52,7 @@ header {
 footer {
     @extend .basic_container;
     background-color: $dark-blue;
+    width: 100vw;
 
     div {
         @extend .layout_container_lists;

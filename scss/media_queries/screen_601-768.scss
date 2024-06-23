@@ -1,8 +1,9 @@
-/* TABLET NORMAL */
+// TABLET NORMAL
 
 @media only screen and (min-width:601px) and (max-width:768px) {
 
-    /* FUENTES */
+    // FUENTES
+
     h1  {
         font-size: 2rem;
     }
@@ -23,7 +24,8 @@
         margin: $percent5;
     }
 
-        // LAYOUT
+    
+    // LAYOUT
 
     nav {
         ul {
@@ -93,9 +95,8 @@
         align-self: center;
     }
 
-    
 
-    /* ABOUT US */
+    // ABOUT US
 
     .about_us_container {
         display: block;
@@ -107,6 +108,7 @@
     }
     
     .about_us_picture_container {
+        display: flex;
         justify-content: center;
     }
     
@@ -115,7 +117,7 @@
     }
 
 
-    /* CONTACT */
+    // CONTACT
    
     .schedule_container {
         display: block;
@@ -155,20 +157,12 @@
         margin-bottom: 10%;
     }
 
-    /* EXPO */
-    
-    .expo_sm {
-        display: none;
-    }
 
-    /* IN NATURE */
+    // IN NATURE
 
     .tour_container {
         display: block;
         justify-content: center;
-    }
-
-    .tour_container {
         margin-bottom: 2%;
     }
     

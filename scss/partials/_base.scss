@@ -1,9 +1,9 @@
-/* PARTIALS */
+// PARTIALS
 
-@import './variables';
+@import '../partials/variables';
 
 
-/* ETIQUETAS */
+// ETIQUETAS
 
 h1  {
     @extend .titles;
@@ -37,7 +37,7 @@ ul {
     gap: 1rem;
 }
 
-/* CLASES */
+// CLASES
 
 .titles {
     font-family: $main-font;
@@ -58,7 +58,7 @@ ul {
 }
 
 
-/* COMPONENTES */
+// COMPONENTES
 
 @mixin picture_size ($width, $height) {
     width: $width;
@@ -67,11 +67,13 @@ ul {
 
 .basic_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: $percent5;
 }
 
-/* ANIMACIONES */
+// ANIMACIONES
+
  @keyframes live_blues{
     0% {
         background-color: $dark-blue;

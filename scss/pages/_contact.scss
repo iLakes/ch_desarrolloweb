@@ -1,19 +1,11 @@
-/* PARTIALS */
+// PARTIALS
 
 @import '../partials/variables';
-@import '../partials/layout';
 @import '../partials/base';
+@import '../partials/layout';
 
 
-.schedule_container {
-    display: flex;
-}
-
-.schedule_container_2 {
-    display: block;
-    padding: $percent10;
-    justify-content: center;
-}
+// CONTACT
 
 .schedule_container {
     display: flex;
@@ -35,6 +27,12 @@
             }
         }  
     }
+}
+
+.schedule_container_2 {
+    display: block;
+    padding: $percent10;
+    justify-content: center;
 }
 
 .schedule_image { 

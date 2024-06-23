@@ -4,6 +4,7 @@
 @import '../partials/base';
 @import '../partials/layout';
 
+
 #home_small_image {
     display: none;
 }
@@ -19,23 +20,31 @@
     display: none;
 }
 
-.home_images {
+.home_images_container {
+    @extend .basic_container;
     justify-content: center;
 }
 
 .home_flipping_container {
-    margin: 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    margin: 1%;
 }
 
 .home_flipping_container_2 {
     width: 500px;
     position: relative;
-    margin: 2%;
+    margin: 1%;
     justify-content: center;
+}
+
+.painting_image .flipping_text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .home_image {
@@ -47,12 +56,13 @@
 }
 
 .flipping_text {
+    z-index: 100;
     width: 500px;
     margin: 2% 0% 2% 0%;
     height: 95%;
     border-radius: $radius;
     top: 0;
-    left: 0;
+    left: 2%;
     position: absolute;
     background-image: radial-gradient(circle, rgba(1,15,36,1) 0%, rgba(1,15,36,0.6825323879551821) 59%, rgba(1,15,36,0.33519345238095233) 86%, rgba(1,15,36,0) 100%);
 

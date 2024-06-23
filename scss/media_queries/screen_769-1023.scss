@@ -1,4 +1,4 @@
-/* DESKTOP CHICA */
+// DESKTOP CHICA
 
 @media only screen and (min-width: 769px) and (max-width:1023px) {
 
@@ -9,7 +9,7 @@
     }
     
 
-    /* HOME */
+    // HOME
 
     #home_small_image {
         display: none;
@@ -37,7 +37,7 @@
     }
     
 
-    /* ABOUT US */
+    // ABOUT US
 
     .about_us_container_history p {
         padding: 2%;
@@ -52,8 +52,7 @@
     }
     
 
-
-    /* CONTACT */
+    // CONTACT
 
     .schedule_image {
         @include picture_size(350px, 250px);
@@ -93,7 +92,7 @@
     }
 
 
-    // EXPO
+    // OUR EXPO
     
     .collapse {
         border-radius: $radius;
@@ -105,11 +104,6 @@
         margin: auto;
         margin-bottom: 2%;
     }
-
-    .expo_sm {
-        display: none;
-    }
-
 
 }
 

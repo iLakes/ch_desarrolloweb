@@ -1,8 +1,9 @@
-/* TABLET CHICA */
+// TABLET CHICA
 
 @media only screen and (min-width:481px) and (max-width:600px) {
 
-    /* FUENTES */
+    // FUENTES
+
     h1  {
         font-size: 2rem;
     }
@@ -41,17 +42,21 @@
     }
 
     footer {
+        display: block;
+        justify-content: center;
         div {
             ul {
                 display: block;
             }
-            p {
-                font-size: 0.7rem;  
-            }
+        }
+        p {
+            padding-bottom: 5%;
+            font-size: 0.7rem;
+            text-align: center; 
         }
     }
 
-    /* HOME */
+    // HOME
 
     #home_carousel {
         display: none !important;
@@ -80,8 +85,8 @@
     .flipping_text {
         width: 90%;
         margin: auto;
-        top: 8;
-        left: 24;
+        top: 3%;
+        left: 2%;
         p {
             font-size: 0.8rem;
             &:hover {
@@ -116,7 +121,7 @@
     }
     
 
-    /* ABOUT US */
+    // ABOUT US
 
     .about_us_container {
         display: block;
@@ -137,7 +142,7 @@
     }
     
 
-    /* CONTACT */
+    // CONTACT
    
     .schedule_container {
         display: block;
@@ -177,14 +182,11 @@
         margin-bottom: 10%;
     }
 
-    /* IN NATURE */
+    // IN NATURE
 
     .tour_container {
         display: block;
         justify-content: center;
-    }
-
-    .tour_container {
         margin-bottom: 2%;
     }
     
@@ -202,6 +204,7 @@
     .our_expo_picture {
         @include picture_size (350px, 280px);
     }
+
 }
 
 

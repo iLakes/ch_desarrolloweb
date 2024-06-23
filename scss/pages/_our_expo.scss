@@ -1,7 +1,11 @@
-/* PARTIALS */
+// PARTIALS
 
-@import '../partials/variables.scss';
+@import '../partials/variables';
+@import '../partials/base';
+@import '../partials/layout';
 
+
+// OUR EXPO
 
 .collapsables {
     margin: 2% 5% 2% 5% !important;
@@ -38,7 +42,7 @@
     }
 }
 
-.expo_sm {
+.mobile_container {
     display: none;
 }
 

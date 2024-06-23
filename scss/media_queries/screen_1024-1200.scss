@@ -1,4 +1,4 @@
-/* DESKTOP GRANDE */
+// DESKTOP GRANDE
 
 @media only screen and (min-width: 1024px) and (max-width:1200px) {
 
@@ -8,6 +8,7 @@
         display: none;
     }
     
+
     // HOME
 
     #home_small_image {
@@ -23,11 +24,14 @@
         height: 350px !important;
     }
 
+
     // CONTACT 
+
     .schedule_image {
         @include picture_size(450px, 320px);
     }
 
+    
     // IN NATURE
 
     .in_nature_picture_sm {

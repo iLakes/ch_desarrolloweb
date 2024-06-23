@@ -1,7 +1,11 @@
-/* PARTIALS */
+// PARTIALS
 
-@import '../partials/variables.scss';
+@import '../partials/variables';
+@import '../partials/base';
+@import '../partials/layout';
 
+
+// IN NATURE
 
 .in_nature_container {
     width: 80%;
@@ -9,11 +13,13 @@
     margin: auto;
     position: relative;
     justify-content: center;
+
     .in_nature_main_picture {
         width: 100%;
         border-radius: $radius;
         box-shadow: $box-shadow;
     }
+
     .in_nature_cta  {
         position: absolute;
         bottom: 50px;
@@ -38,10 +44,9 @@
 }
 
 .tour_container {
-    @extend .basic_container;
+    display: flex;
     justify-content: center;
-    margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 5%;  
 
     .tour_container_2 {
         justify-content: center;
@@ -53,7 +58,8 @@
 
             .in_nature_text {
                 margin: 2%;
-                font-size: 1rem;
+                font-size: 0.9rem;
+                width: 80%;
             }
             .in_nature_picture_sm {
                 @include picture_size (300px, 300px);
@@ -65,9 +71,6 @@
                 &:hover {
                     filter: brightness(70%) grayscale(1.0);
                 }
-            }
-            .in_nature_text {
-                width: 80%;
             }
         }
     }
